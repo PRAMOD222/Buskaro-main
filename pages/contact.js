@@ -23,7 +23,7 @@ const Contact = () => {
       body: JSON.stringify(formdata),
     })
     let response = await res.json()
-    console.log(response);
+    console.log(response,"response");
     if (response.success) {
       toast.success('Email sent successfully!', {
         position: "top-right",
